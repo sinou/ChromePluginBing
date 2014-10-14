@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Score!",
+  "description": "This extension scores bing.com rewards points for you.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.bing.com/*", "http://www.bing.com/*" ],
+      "js": ["jquery.js", "evilScript.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
